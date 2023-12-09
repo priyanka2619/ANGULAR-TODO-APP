@@ -1,0 +1,63 @@
+
+
+/* *{
+    margin: 0px;
+    padding: 0px;
+    
+} */
+
+.heading-section{
+    background-color: rgb(182 158 185);
+    padding: 100px;
+    text-align: center;
+    color: white;
+    padding-bottom: 170px;
+}
+
+.title{
+    font-weight: bold;
+    font-family: unset;
+    text-shadow: 3px 3px #cec0b0;
+    font-size: 65px;
+}
+
+.container{
+    max-width: 200px;
+}
+
+.add-todo-box-container{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+h3{
+    padding: 5px;
+}
+
+
+.add-todo-box{
+    padding: 25px;
+    border-radius: 7px;
+    margin-top: -69px;
+    background-color: white;
+    box-shadow: 3px 6px 9px rgb(231, 231, 231);
+    margin-bottom: 0px;
+}
+
+.sub-heading{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px;
+    padding: 7px;
+    font-family: sans-serif
+}
+
+
+
+.error-message{
+    color: red;
+    font-family: sans-serif;
+    
+}
+

@@ -1,0 +1,114 @@
+i.material-icons{
+    margin-right: 7px;
+    margin-left: -7px;
+    color: white;
+}
+
+.todo-item{
+    display: flex;
+    position: relative;
+    align-items: center;
+    font-size: 20px;
+    padding: 30px 20px;
+    /* background: rgb(250, 249, 249); */
+    margin: 20px;
+    border-bottom: 2px solid #eee;
+    cursor: pointer;
+    
+}
+
+/* checkbox color is purple inside circle*/
+
+/* .todo-item.completed .check-box{
+    background-color: rgb(177, 149, 180);
+    border-color: rgb(177, 149, 180);
+    opacity: 1;
+} */
+
+
+.todo-item.completed .check-box i.material-icons{
+    opacity: 1;
+    
+
+ } 
+
+.todo-item .check-box{
+    display: flex;
+    flex-shrink: 0;
+
+    border: 2px solid rgb(207, 204, 204);
+    border-radius: 50%;
+    width: 29px;
+    height: 29px;
+    margin-right: 20px;
+    transition: background-color 0.2s;
+
+   
+}
+
+.todo-item .check-box i.material-icons{
+    /* font-size: 20px; */
+    margin: auto;
+    
+
+    /* hide by default */
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.todo-item:hover .check-box i.material-icons{
+    color: #333;
+    opacity: 0.28;
+
+    transition: opacity 0.2s;
+
+}
+
+
+
+.todo-item:hover .check-box{
+    background-color: #f1eded;
+}
+
+
+.todo-item .todo-control{
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+
+    display: flex;
+
+    /* hide by default */
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.2s, visibility 0.2s;
+}
+
+.todo-item:hover .todo-control{
+    opacity: 1;
+    visibility: visible;
+    
+    transition-delay: 1s;
+}
+
+.todo-control .todo-button{
+    display: flex;
+    background: #ebe9e9;
+    padding: 7px 10px;
+    border-radius: 8px;
+} 
+
+.todo-control .todo-button i.material-icons{
+    font-size: 23px;
+    margin: auto;
+    color: black
+
+}
+
+.todo-control .todo-button i.material-icons:hover{
+    color: rgb(211, 134, 134);
+}
+
+
+
